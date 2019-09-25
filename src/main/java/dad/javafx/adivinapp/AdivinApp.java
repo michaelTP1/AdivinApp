@@ -108,6 +108,7 @@ public class AdivinApp extends Application{
 			notNumberAlert.showAndWait();
 			
 		}
+		numberText.clear();
 		
 		
 	}
