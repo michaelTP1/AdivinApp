@@ -89,10 +89,10 @@ public class AdivinApp extends Application{
 				infoAlert.showAndWait();
 				reset();
 			}else if(number<hiddenNumber&&number>0) {
-				warningAlert.setContentText("El número introducido es menor al número oculto");
+				warningAlert.setContentText("El número a adivinar es mayor a "+number);
 				warningAlert.showAndWait();
 			}else if(number>hiddenNumber&&number<=100) {
-				warningAlert.setContentText("El número introducido es mayor al número oculto");
+				warningAlert.setContentText("El número a adivinar es menor a "+number);
 				warningAlert.showAndWait();
 			}else {
 				count++;
