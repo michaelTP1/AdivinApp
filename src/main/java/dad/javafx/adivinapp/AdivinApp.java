@@ -24,7 +24,7 @@ public class AdivinApp extends Application{
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 
-		hiddenNumber = (int)(Math.random()*100);
+		hiddenNumber = (int)(Math.random()*100+1);
 		
 		infoAlert=new Alert(AlertType.INFORMATION);
 		infoAlert.setTitle("AdivinApp");
@@ -113,7 +113,7 @@ public class AdivinApp extends Application{
 	}
 	private void reset() {
 		count=0;
-		hiddenNumber = (int)(Math.random()*100);
+		hiddenNumber = (int)(Math.random()*100+1);
 		
 	}
 
