@@ -54,6 +54,7 @@ public class AdivinApp extends Application{
 		numberText=new TextField();
 		numberText.setPromptText("introduce un número");
 		numberText.setMaxWidth(150);
+		numberText.setAlignment(Pos.CENTER);
 		
 		checkButton=new Button("Comprobar");
 		checkButton.setDefaultButton(true);
