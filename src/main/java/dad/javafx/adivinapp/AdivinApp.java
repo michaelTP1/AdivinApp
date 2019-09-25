@@ -18,13 +18,13 @@ public class AdivinApp extends Application{
 	private Button checkButton;
 	private TextField numberText;
 	private Alert infoAlert, warningAlert, notNumberAlert, outOfBoundsAlert;
-	private int count=0, hiddenNumber;
+	private int count=0, hiddenNumber= (int)(Math.random()*100+1);
 	
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 
-		hiddenNumber = (int)(Math.random()*100+1);
+	
 		
 		infoAlert=new Alert(AlertType.INFORMATION);
 		infoAlert.setTitle("AdivinApp");
